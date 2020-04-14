@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  delete 'images/:id' => 'images#destroy', as: "delete_image"
   root 'images#index'
   get 'images' => 'images#index'
 
