@@ -8,4 +8,12 @@ class ImagesController < ApplicationController
         @image = Image.find(params[:id])
     end
 
+    def new
+    end
+  
+    def create
+        render html: 
+        "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}"
+    end
+
 end
